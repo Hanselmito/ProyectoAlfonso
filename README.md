@@ -1,0 +1,1 @@
+Componentes del grupo Juan David, Manuel Cosano y Joaquin.

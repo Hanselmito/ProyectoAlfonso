@@ -1,0 +1,9 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8†Á¥£ú1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áç„ªÿÿÿÿÿ8ŽÁ¥£ú1
+Y
+java:S2589"7Remove this expression which always evaluates to "true"(¢‰¥Ñÿÿÿÿÿ8µÁ¥£ú1
+V
+java:S3400"9Remove this method and declare a constant for this value.(”·³›8ÒÁ¥£ú1
+\
+java:S1172":Remove these unused method parameters "origen", "destino".(Ð€ŽÁÿÿÿÿÿ8ÚÁ¥£ú1
