@@ -1,0 +1,132 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > TransportistaFede</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.github.Hanselmito.entity</a>
+</div>
+
+<h1>Coverage Summary for Class: TransportistaFede (com.github.Hanselmito.entity)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TransportistaFede</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.github.Hanselmito.entity;
+&nbsp;
+&nbsp;public class TransportistaFede extends Transportista{
+&nbsp;    public TransportistaFede() {
+<b class="nc">&nbsp;        super(&quot;Fede&quot;, &quot;marrón&quot;, 0);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public double presupuestar(Punto origen, Punto destino, double peso) {
+<b class="nc">&nbsp;        double distancia = calcularDistanciaManhattan(origen, destino);</b>
+<b class="nc">&nbsp;        if (0 &lt;= distancia &amp;&amp; distancia &lt;= 10) {</b>
+<b class="nc">&nbsp;            return 5;</b>
+<b class="nc">&nbsp;        } else if (10 &lt; distancia &amp;&amp; distancia &lt; 100) {</b>
+<b class="nc">&nbsp;            return (peso * distancia) / 2;</b>
+&nbsp;        } else {
+&nbsp;            try {
+<b class="nc">&nbsp;                throw new EnvioNoDisponibleException(&quot;La distancia de &quot; + distancia + &quot; Km no está soportada.&quot;);</b>
+<b class="nc">&nbsp;            } catch (EnvioNoDisponibleException e) {</b>
+<b class="nc">&nbsp;                throw new RuntimeException(e);</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    private double calcularDistanciaManhattan(Punto origen, Punto destino) {
+&nbsp;        // Implementación de DistanciaManhattan
+<b class="nc">&nbsp;        return 0;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-05-23 10:41</div>
+</div>
+</body>
+</html>
